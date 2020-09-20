@@ -6,7 +6,7 @@ import { formatDate } from './helpers';
 import Pagination from './Pagination';
 import Filters from '../../components/Filters';
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sds1-gabriel.herokuapp.com';
 
 const Records = () => {
     const [recordsResponse, setRecordsResponse] = useState<RecordsResponse>();
@@ -43,7 +43,7 @@ const Records = () => {
                             <td>{record.age}</td>
                             <td className="text-secondary">{record.gamePlatform}</td>
                             <td>{record.genreName}</td>
-                            <td className="text-primary">{record.gameTitle}</td>
+                            <td className="text-primary">{record.gameName}</td>
                         </tr>
                     ))}
                 </tbody>
